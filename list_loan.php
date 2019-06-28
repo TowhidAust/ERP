@@ -34,244 +34,10 @@
 
 </head>
 <body class="page-body  page-fade" data-url="http://neon.dev">
-
-<div class="page-container sidebar-collapsed"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
-	
-	<div class="sidebar-menu">
-
-		<div class="sidebar-menu-inner">
-			
-			<header class="logo-env">
-
-				<!-- logo -->
-				<div class="logo">
-					<a href="index.html">
-						<img src="assets/images/logo@2x.png" width="120" alt="" />
-					</a>
-				</div>
-
-				<!-- logo collapse icon -->
-				<div class="sidebar-collapse">
-					<a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
-						<i class="entypo-menu"></i>
-					</a>
-				</div>
-
-								
-				<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
-				<div class="sidebar-mobile-menu visible-xs">
-					<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
-						<i class="entypo-menu"></i>
-					</a>
-				</div>
-
-			</header>
-			
-									
-			<ul id="main-menu" class="main-menu">
-				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
-				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-				<li class="active opened active has-sub">
-					<a href="index.html">
-						<!-- <i class="entypo-gauge"></i> -->
-						<span class="title">Dashboard</span>
-					</a>
-					<!-- <ul class="visible">
-						<li class="active">
-							<a href="index.html">
-								<span class="title">Dashboard 1</span>
-							</a>
-						</li>
-						<li>
-							<a href="dashboard-2.html">
-								<span class="title">Dashboard 2</span>
-							</a>
-						</li>
-						<li>
-							<a href="dashboard-3.html">
-								<span class="title">Dashboard 3</span>
-							</a>
-						</li>
-						<li class="has-sub">
-							<a href="skin-black.html">
-								<span class="title">Skins</span>
-							</a>
-							<ul>
-								<li>
-									<a href="skin-black.html">
-										<span class="title">Black Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-white.html">
-										<span class="title">White Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-purple.html">
-										<span class="title">Purple Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-cafe.html">
-										<span class="title">Cafe Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-red.html">
-										<span class="title">Red Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-green.html">
-										<span class="title">Green Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-yellow.html">
-										<span class="title">Yellow Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-blue.html">
-										<span class="title">Blue Skin</span>
-									</a>
-								</li>
-								<li>
-									<a href="skin-facebook.html">
-										<span class="title">Facebook Skin</span>
-										<span class="badge badge-secondary badge-roundless">New</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="highlights.html">
-								<span class="title">What's New</span>
-								<span class="badge badge-success badge-roundless">v2.0</span>
-							</a>
-						</li>
-					</ul> -->
-				</li>
-				<li class="has-sub">
-					<a href="#">
-						<i class="entypo-layout"></i>
-						<span class="title">Borrowers</span>
-					</a>
-					<ul>
-						<li>
-							<a href="list_borrowers.html">
-								<span class="title">List Borrowers</span>
-							</a>
-						</li>
-						<li>
-							<a href="add_borrower.html">
-								<span class="title">Add Borrowers</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="#">
-						<i class="entypo-layout"></i>
-						<span class="title">Loans</span>
-					</a>
-					<ul>
-						<li>
-							<a href="list_loan.html">
-								<span class="title">List Loan</span>
-							</a>
-						</li>
-						<li>
-							<a href="add_loan.html">
-								<span class="title">Add Loan</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="#">
-						<i class="entypo-layout"></i>
-						<span class="title">Payment</span>
-					</a>
-					<ul>
-						<li>
-							<a href="list_payments.html">
-								<span class="title">List Payment</span>
-							</a>
-						</li>
-						<li>
-							<a href="add_payments.html">
-								<span class="title">Add Payment</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="#">
-						<i class="entypo-layout"></i>
-						<span class="title">Collector</span>
-					</a>
-					<ul>
-						<li>
-							<a href="list_collectors.html">
-								<span class="title">List Collector</span>
-							</a>
-						</li>
-						<li>
-							<a href="add_collector.html">
-								<span class="title">Add Collector</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="#">
-						<i class="entypo-layout"></i>
-						<span class="title">Settings</span>
-					</a>
-					<ul>
-						<li>
-							<a href="#">
-								<span class="title">user</span>
-							</a>
-
-								<ul>
-									<li>
-										<a href="list_users.html">
-										<span class="title">List User</span>
-										</a>
-									</li>
-									<li>
-											<a href="add_user.html">
-											<span class="title">Add User</span>
-											</a>
-									</li>
-									<li>
-											<a href="edit_profile.html">
-											<span class="title">Edit Profile</span>
-											</a>
-									</li>
-								</ul>
-						</li>
-						<li>
-							<a href="company_details.html">
-								<span class="title">Company Details</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-
-
-			</ul>
-			
-		</div>
-
-	</div>
+	<div class="page-container sidebar-collapsed"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+		<<?php 
+			include('includes/sidebar.php');
+ 		?>
 
 	<div class="main-content">
 				
@@ -726,161 +492,6 @@
 		
 		<hr />
 		
-		
-		<div class="row">
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-red">
-					<div class="icon"><i class="entypo-users"></i></div>
-					<div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
-		
-					<h3>Total Borrowers</h3>
-					<p>so far in our list, and our website.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-green">
-					<div class="icon"><i class="entypo-chart-bar"></i></div>
-					<div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">0</div>
-		
-					<h3>Total Loan</h3>
-					<p>this is the average value.</p>
-				</div>
-		
-			</div>
-			
-			<div class="clear visible-xs"></div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-aqua">
-					<div class="icon"><i class="entypo-mail"></i></div>
-					<div class="num" data-start="0" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">0</div>
-		
-					<h3>Total Payment</h3>
-					<p>messages per day.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-blue">
-					<div class="icon"><i class="entypo-rss"></i></div>
-					<div class="num" data-start="0" data-end="52" data-postfix="" data-duration="1500" data-delay="1800">0</div>
-		
-					<h3>Total Due</h3>
-					<p>on our site right now.</p>
-				</div>
-		
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-red">
-					<div class="icon"><i class="entypo-users"></i></div>
-					<div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
-		
-					<h3>Registered users</h3>
-					<p>so far in our blog, and our website.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-green">
-					<div class="icon"><i class="entypo-chart-bar"></i></div>
-					<div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">0</div>
-		
-					<h3>Daily Due</h3>
-					<p>this is the average value.</p>
-				</div>
-		
-			</div>
-			
-			<div class="clear visible-xs"></div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-aqua">
-					<div class="icon"><i class="entypo-mail"></i></div>
-					<div class="num" data-start="0" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">0</div>
-		
-					<h3>Monthly Due</h3>
-					<p>messages per day.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-blue">
-					<div class="icon"><i class="entypo-rss"></i></div>
-					<div class="num" data-start="0" data-end="52" data-postfix="" data-duration="1500" data-delay="1800">0</div>
-		
-					<h3>Subscribers</h3>
-					<p>on our site right now.</p>
-				</div>
-		
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-red">
-					<div class="icon"><i class="entypo-users"></i></div>
-					<div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
-		
-					<h3>Registered users</h3>
-					<p>so far in our blog, and our website.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-green">
-					<div class="icon"><i class="entypo-chart-bar"></i></div>
-					<div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">0</div>
-		
-					<h3>Daily Due</h3>
-					<p>this is the average value.</p>
-				</div>
-		
-			</div>
-			
-			<div class="clear visible-xs"></div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-aqua">
-					<div class="icon"><i class="entypo-mail"></i></div>
-					<div class="num" data-start="0" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">0</div>
-		
-					<h3>Monthly Due</h3>
-					<p>messages per day.</p>
-				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-blue">
-					<div class="icon"><i class="entypo-rss"></i></div>
-					<div class="num" data-start="0" data-end="52" data-postfix="" data-duration="1500" data-delay="1800">0</div>
-		
-					<h3>Subscribers</h3>
-					<p>on our site right now.</p>
-				</div>
-		
-			</div>
-		</div>
-		
 		<br />
 		
 		
@@ -893,7 +504,7 @@
 		
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<div class="panel-title">Latest Updated Profiles</div>
+						<div class="panel-title">List of Borrowers</div>
 		
 						<div class="panel-options">
 							<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
@@ -907,34 +518,61 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Name</th>
-								<th>Position</th>
-								<th>Activity</th>
+								<th>Date</th>
+								<th>Borrower Name</th>
+								<th>Address</th>
+								<th>Phone</th>
+								<th>Loan Taken</th>
+								<th>Pending Payment</th>
+								<th>Payment Schedule</th>
 							</tr>
 						</thead>
 		
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Art Ramadani</td>
-								<td>CEO</td>
-								<td class="text-center"><span class="inlinebar">4,3,5,4,5,6</span></td>
+								<td>02-06-2019</td>
+								<td>Sakib Al Hasan</td>
+								<td>Dhaka</td>
+								<td>01737010194</td>
+								<td>30,000 </td>
+								<td>20,000 </td>
+								<td>Daily</td>
+								
 							</tr>
 		
 							<tr>
 								<td>2</td>
-								<td>Ylli Pylla</td>
-								<td>Font-end Developer</td>
-								<td class="text-center"><span class="inlinebar-2">1,3,4,5,3,5</span></td>
+								<td>02-06-2019</td>
+								<td>Sakib Al Hasan</td>
+								<td>Dhaka</td>
+								<td>01737010194</td>
+								<td>30,000 </td>
+								<td>20,000 </td>
+								<td>Weekly</td>
 							</tr>
-		
+
 							<tr>
 								<td>3</td>
-								<td>Arlind Nushi</td>
-								<td>Co-founder</td>
-								<td class="text-center"><span class="inlinebar-3">5,3,2,5,4,5</span></td>
+								<td>02-06-2019</td>
+								<td>Sakib Al Hasan</td>
+								<td>Dhaka</td>
+								<td>01737010194</td>
+								<td>30,000 </td>
+								<td>20,000 </td>
+								<td>Daily</td>
 							</tr>
-		
+							<tr>
+								<td>4</td>
+								<td>02-06-2019</td>
+								<td>Sakib Al Hasan</td>
+								<td>Dhaka</td>
+								<td>01737010194</td>
+								<td>30,000 </td>
+								<td>20,000 </td>
+								<td>Monthly</td>
+							</tr>
+							
 						</tbody>
 					</table>
 				</div>
@@ -948,12 +586,9 @@
 		
 		
 		<!-- Footer -->
-		<footer class="main">
-			
-			&copy; 2015 <strong>Neon</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
-		
-		</footer>
-	</div>
+		<<?php 
+			include('includes/footer.php');
+ 		?>
 
 </div>
 

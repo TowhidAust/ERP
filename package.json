@@ -1,0 +1,22 @@
+{
+  "name": "erp",
+  "version": "1.0.0",
+  "description": "Erp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TowhidAust/ERP.git"
+  },
+  "author": "TowhidAust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TowhidAust/ERP/issues"
+  },
+  "homepage": "https://github.com/TowhidAust/ERP#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

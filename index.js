@@ -1,1 +1,2 @@
-console.log("Hello world");
+let logsss = require('./module');
+console.log(logsss);

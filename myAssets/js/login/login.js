@@ -1,3 +1,4 @@
+
 function toggleSignup(){
     document.getElementById("login-toggle").style.backgroundColor="#fff";
      document.getElementById("login-toggle").style.color="#222";
@@ -17,14 +18,6 @@ function toggleSignup(){
  }
 
 //  Function for login
-
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      console.log("askdf");
-    } else {
-      // No user is signed in.
-    }
-  });
   
 function login(){
     

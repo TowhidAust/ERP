@@ -18,14 +18,61 @@ function toggleSignup(){
  }
 
 //  Function for login
+
+
+
+auth.onAuthStateChanged(function(user) {
+
+    console.log(user);
+    if (user) {
+      console.log("Logged in");
+    } else {
+     console.log("Logged out");
+    }
+  });
   
-function login(){
-    
-    $(".login_Submit").click(function(){
-        let userEmail = document.getElementById("email_field").value;
-        let userPassword = document.getElementById("password_field").value;
+function signUp(){
+
+    $("#SignUpButton").click(function(event){
+        event.preventDefault();
+        let userEmail = document.getElementById("signUp_Email_Field").value;
+        // let userName = document.getElementById("signUp_Username_Field").value;
+        let userPassword = document.getElementById("signUp_Password_Field").value;
        console.log(userEmail,userPassword);
+        auth.createUserWithEmailAndPassword(userEmail, userPassword).then(cred =>{
+            console.log("You are signed up");
+            window.location = 'dashboard.html';
+        })
     });
 }
+signUp();
+
+
+function logout(){
+    $(".LogoutLi").click(function(event){
+        event.preventDefault();
+        auth.signOut();
+
+    });
+}
+
+function login(){
+    // $('.page-container').css("display", "none");
+
+    $(".login_Submit").click(function(event){
+        event.preventDefault();
+        let userEmail = document.getElementById("email_field").value;
+        // let userName = document.getElementById("signUp_Username_Field").value;
+        let userPassword = document.getElementById("password_field").value;
+       console.log(userEmail,userPassword);
+        auth.signInWithEmailAndPassword(userEmail, userPassword).then(cred =>{
+            console.log("You are signed in");
+            
+        })
+    });
+}
+
+
+
 login();
  

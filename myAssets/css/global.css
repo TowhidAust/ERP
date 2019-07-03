@@ -1,0 +1,4 @@
+/*side bar*/
+.Dash_Nav_Li a span::before{
+    display: none !important;
+}

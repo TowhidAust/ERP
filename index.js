@@ -1,2 +1,2 @@
-let logsss = require('./module');
-console.log(logsss);
+const person = require('./person');
+console.log(person);

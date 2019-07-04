@@ -40,6 +40,16 @@ auth.onAuthStateChanged(function(user) {
     console.log(user);
     if (user) {
       console.log("Logged in");
+
+        var displayName = user.displayName;
+        var email = user.email;
+        var emailVerified = user.emailVerified;
+        var photoURL = user.photoURL;
+        var isAnonymous = user.isAnonymous;
+        var uid = user.uid;
+        var providerData = user.providerData;
+
+        console.log(displayName, email,emailVerified,photoURL,isAnonymous,uid,providerData);
       window.location = 'dashboard.html';
     } else {
      console.log("Logged out");
@@ -54,10 +64,14 @@ function signUp(){
         let userEmail = document.getElementById("signUp_Email_Field").value;
         // let userName = document.getElementById("signUp_Username_Field").value;
         let userPassword = document.getElementById("signUp_Password_Field").value;
-       console.log(userEmail,userPassword);
-        auth.createUserWithEmailAndPassword(userEmail, userPassword).then(cred =>{
-            
-        })
+        //  console.log(userEmail,userPassword);
+        auth.createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // console.log("error code/Message", errorCode,errorMessage);
+
+          });
     });
 }
 
@@ -86,11 +100,14 @@ function login(){
         let userEmail = document.getElementById("email_field").value;
         // let userName = document.getElementById("signUp_Username_Field").value;
         let userPassword = document.getElementById("password_field").value;
-       console.log(userEmail,userPassword);
-        auth.signInWithEmailAndPassword(userEmail, userPassword).then(cred =>{
-          
-            
-        })
+    //    console.log(userEmail,userPassword);
+        auth.signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("error code/Message", errorCode,errorMessage);
+
+          });
     });
 }
 

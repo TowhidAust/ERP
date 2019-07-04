@@ -1,8 +1,3 @@
-
-
-
-
-
  var firebaseConfig = {
     apiKey: "AIzaSyBhNDpYcf8IvOTjvjAPsm8P6jpWU8vfWbY",
     authDomain: "erp-software-b558a.firebaseapp.com",
@@ -13,7 +8,7 @@
     appId: "1:599671684678:web:a20f5e843a453fe2"
 };
 
-    firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 
 const auth = firebase.auth();
@@ -21,12 +16,17 @@ const db = firebase.firestore();
 
 
 auth.onAuthStateChanged(function(user) {
-    console.log(user);
     if (user) {
       console.log("Logged in");
-    //   $(".form-modal").css("display", "none");
-    //   window.location.href = '/dashboard.html';
-    //   window.location = 'dashboard.html';
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+
+      console.log(displayName, email,emailVerified,photoURL,isAnonymous,uid,providerData);
     } else {
      console.log("Logged out");
      window.location = 'index.html';

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="myAssets/css/LoginPage/login.css">
 
     <script src="assets/js/jquery-1.11.3.min.js"></script>
+      <!-- Add Firebase -->
+  	<!-- Firebase connection -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    
 </head>
 <body>
     <div class="form-modal">
@@ -46,36 +50,15 @@
     </div>
     
 
-    <!-- Add Firebase -->
+  
+
+ 	 <!-- Add Firebase -->
   	<!-- Firebase connection -->
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#config-web-app -->
-
-    <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyBhNDpYcf8IvOTjvjAPsm8P6jpWU8vfWbY",
-        authDomain: "erp-software-b558a.firebaseapp.com",
-        databaseURL: "https://erp-software-b558a.firebaseio.com",
-        projectId: "erp-software-b558a",
-        storageBucket: "",
-        messagingSenderId: "599671684678",
-        appId: "1:599671684678:web:a20f5e843a453fe2"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    //  make auth and firestore references
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    // db.settings({timestampsInSnapshots: true});
-    </script>
     <!-- <script src="myAssets/js/firebase/firebase.js"></script> -->
     <script src="myAssets/js/login/login.js"></script>
 </body>

@@ -1,4 +1,3 @@
-
 function toggleSignup(){
     document.getElementById("login-toggle").style.backgroundColor="#fff";
      document.getElementById("login-toggle").style.color="#222";
@@ -17,17 +16,34 @@ function toggleSignup(){
      document.getElementById("login-form").style.display="block";
  }
 
-//  Function for login
 
+
+
+ var firebaseConfig = {
+    apiKey: "AIzaSyBhNDpYcf8IvOTjvjAPsm8P6jpWU8vfWbY",
+    authDomain: "erp-software-b558a.firebaseapp.com",
+    databaseURL: "https://erp-software-b558a.firebaseio.com",
+    projectId: "erp-software-b558a",
+    storageBucket: "",
+    messagingSenderId: "599671684678",
+    appId: "1:599671684678:web:a20f5e843a453fe2"
+};
+
+    firebase.initializeApp(firebaseConfig);
+
+
+const auth = firebase.auth();
+const db = firebase.firestore();
 
 
 auth.onAuthStateChanged(function(user) {
-
     console.log(user);
     if (user) {
       console.log("Logged in");
+      window.location = 'dashboard.html';
     } else {
      console.log("Logged out");
+    //  window.location = 'index.html';
     }
   });
   
@@ -40,18 +56,24 @@ function signUp(){
         let userPassword = document.getElementById("signUp_Password_Field").value;
        console.log(userEmail,userPassword);
         auth.createUserWithEmailAndPassword(userEmail, userPassword).then(cred =>{
-            console.log("You are signed up");
-            window.location = 'dashboard.html';
+            
         })
     });
 }
-signUp();
+
+
+
+
+
 
 
 function logout(){
     $(".LogoutLi").click(function(event){
         event.preventDefault();
-        auth.signOut();
+        console.log("logout clicked");
+        auth.signOut().then(()=>{
+            window.location='index.html';
+        });
 
     });
 }
@@ -66,13 +88,15 @@ function login(){
         let userPassword = document.getElementById("password_field").value;
        console.log(userEmail,userPassword);
         auth.signInWithEmailAndPassword(userEmail, userPassword).then(cred =>{
-            console.log("You are signed in");
+          
             
         })
     });
 }
 
-
-
+signUp();
 login();
+logout();
+
+
  
